@@ -19,19 +19,30 @@ const Login = () => {
         // console.log('IsLogedIn: ' + isLogedIn);
         setIsLogedIn(false);
     }
+
+    let btn;
+    if (isLogedIn) {
+        btn = <CommonBtn onClick={() => handleLogout()} btn_style='logout-btn'>Logout</CommonBtn>
+    }
+    else {
+        btn = <CommonBtn onClick={() => handleLogin()} btn_style='login-btn'>Login</CommonBtn>
+      
+    }
+
     return (
         <div>
 
             <Greeting isLogedIn={isLogedIn} />
             {console.log('IsLogedIn: ' + isLogedIn)}
             <br />
+            {btn}
             {/* <LoginBtn onClick={() => handleLogin()} />
             &nbsp;&nbsp;
             <LogoutBtn onClick={() => handleLogout()} /> */}
 
-            <CommonBtn onClick={() => handleLogin()} btn_style='login-btn'>Login</CommonBtn>
+            {/* <CommonBtn onClick={() => handleLogin()} btn_style='login-btn'>Login</CommonBtn>
             &nbsp;&nbsp;
-            <CommonBtn onClick={() => handleLogout()} btn_style='logout-btn'>Logout</CommonBtn>
+            <CommonBtn onClick={() => handleLogout()} btn_style='logout-btn'>Logout</CommonBtn> */}
         </div>
     )
 }
