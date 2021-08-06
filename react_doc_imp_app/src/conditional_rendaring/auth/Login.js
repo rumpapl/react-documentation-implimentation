@@ -3,6 +3,7 @@ import Greeting from '../Greeting';
 // import LoginBtn from './LoginBtn';
 // import LogoutBtn from './LogoutBtn';
 import CommonBtn from './CommonBtn';
+import './style/style.css';
 
 const Login = () => {
     const [isLogedIn, setIsLogedIn] = React.useState(false);
@@ -28,9 +29,9 @@ const Login = () => {
             &nbsp;&nbsp;
             <LogoutBtn onClick={() => handleLogout()} /> */}
 
-            <CommonBtn onClick={() => handleLogin()}>Login</CommonBtn>
+            <CommonBtn onClick={() => handleLogin()} btn_style='login-btn'>Login</CommonBtn>
             &nbsp;&nbsp;
-            <CommonBtn onClick={() => handleLogout()}>Logout</CommonBtn>
+            <CommonBtn onClick={() => handleLogout()} btn_style='logout-btn'>Logout</CommonBtn>
         </div>
     )
 }

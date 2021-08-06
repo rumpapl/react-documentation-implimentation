@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CommonBtn = ({onClick,children}) => {
+const CommonBtn = ({onClick,children, btn_style}) => {
     return (
-        <button onClick={onClick}>{children}</button>
+        <button onClick={onClick} className={btn_style}>{children}</button>
     )
 }
 
