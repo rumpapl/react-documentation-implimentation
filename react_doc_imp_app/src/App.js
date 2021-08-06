@@ -1,12 +1,9 @@
 
-import ClassCom from "./handling_event/ClassCom";
-import FunctionalCom  from "./handling_event/FunctionalCom";
-
+import Login from "./conditional_rendaring/auth/Login";
 function App() {
   return (
     <div>
-     <ClassCom />
-     <FunctionalCom />
+      <Login/>
     </div>
   );
 }
