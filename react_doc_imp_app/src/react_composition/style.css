@@ -1,7 +1,12 @@
 .product_box{
     border: 3px solid;
+    display: block;
     margin: 20px;
-    height: 150px;
     width: auto;
     padding: 20px;
+    border-color: crimson;
+}
+
+.bg_color{
+    background-color: rgb(127, 231, 231);
 }

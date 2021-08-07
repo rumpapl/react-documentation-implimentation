@@ -3,7 +3,7 @@ import ProductLayout from './ProductLayout';
 
 const Product = (props) => {
     return (
-        <ProductLayout>
+        <ProductLayout bg_color='bg_color'>
             <h3>{props.product.title}</h3>
             <h4>{props.product.type}</h4>
             <span>{props.product.description}</span>
@@ -12,3 +12,5 @@ const Product = (props) => {
 }
 
 export default Product
+
+
