@@ -1,9 +1,9 @@
 
-import Login from "./conditional_rendaring/auth/Login";
+import Form from "./react_form/Form";
 function App() {
   return (
     <div>
-      <Login/>
+     <Form />
     </div>
   );
 }
