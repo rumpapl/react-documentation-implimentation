@@ -25,10 +25,10 @@ const Form = () => {
     return (
         <div>
             <h1>Login Form</h1>
-            <span>{name}</span>
+            {/* <span>{name}</span>
             <br/>
-            <span>{password}</span>
-            <form onSubmit={handleSubmit}>
+            <span>{password}</span> */}
+            <div>
                 <label>
                     Name: <input type='text' value={name || ''} placeholder='Enter name' onChange={handleChangeName} />
                 </label>
@@ -39,8 +39,8 @@ const Form = () => {
                 </label>
                 <br />
                 <br />
-                <input type='submit' value="Submit"/>
-            </form>
+                <button onClick={handleSubmit}>Login</button>
+                </div>
         </div>
     )
 }
