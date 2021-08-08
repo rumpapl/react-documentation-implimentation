@@ -6,7 +6,7 @@ import ButtomComp from "./react_composition/ButtomComp";
 function App() {
   return (
     <div>
-     <ProdectList top={<TopComp/>} buttom={<ButtomComp/>}/>
+     <ProdectList top={<TopComp title="Top Component"/>} buttom={<ButtomComp  title='Buttom Component'/>}/>
     </div>
   );
 }
