@@ -6,6 +6,7 @@ const ProdectList = (props) => {
     return (
         <>
             {props.top}
+            {props.children}
             {products.map((product) =>
                 <Product key={product.id} product={product} />
             )}
