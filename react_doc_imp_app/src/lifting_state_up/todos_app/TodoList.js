@@ -9,14 +9,22 @@ const TodoList = () => {
         { id: 2, title: 'Home Work', selected: false },
         { id: 3, title: 'Laundry', selected: false },
         { id: 4, title: 'Study', selected: false },
-        { id: 5, title: 'Shopping', selected: false },
-    ])
+        { id: 5, title: 'Shopping', selected: true },
+    ]);
+
+    // function handleItemSelectClick(id){
+    //     console.log(id);
+    // }
 
     return (
         <>
             {
                 todos.map((todo) =>
-                    <TodoItem todo={todo} key={todo.id} />
+                    <TodoItem
+                        todo={todo}
+                        key={todo.id}
+                    // onClick={()=>handleItemSelectClick(todo.id)}
+                    />
                 )
             }
 
