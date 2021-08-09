@@ -1,0 +1,35 @@
+.todo-box{
+    border: 1px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    margin: 10px 40%;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+
+.setected{
+    background-color:rgb(0, 214, 252);
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    margin: 10px 40%;
+    border-radius: 10px;
+}
+
+.btn{
+   background-color: red;
+   padding: 10px 0;
+   border: none;
+   color: white;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+}

@@ -1,10 +1,9 @@
-
-import Calculator from "./lifting_state_up/water_boiling_temp_calculator/Calculator";
+import Todos from "./lifting_state_up/todos_app/Todos";
 
 function App() {
   return (
     <div>
-      <Calculator />
+      <Todos />
     </div>
   );
 }
