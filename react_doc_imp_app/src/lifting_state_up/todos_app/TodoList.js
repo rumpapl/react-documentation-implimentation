@@ -21,6 +21,11 @@ const TodoList = () => {
 
     }
 
+    function handleDelete() {
+        const newTodos = todos.filter((todo) => todo.selected === false);
+        setTodos(newTodos);
+    }
+
     return (
         <>
             {
@@ -33,8 +38,11 @@ const TodoList = () => {
                 )
             }
 
-            <div className="btn-container">
-                <button className='btn'>Delete</button>
+            <div
+                className="btn-container btn"
+                onClick={() => handleDelete()}
+            >
+                <span>Delete</span>
             </div>
         </>
     )

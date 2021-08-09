@@ -20,16 +20,13 @@
     align-items: center;
     justify-content: center;
     background-color: red;
-    margin: 10px 40%;
+    margin: 20px 40%;
+    padding: 10px;
     border-radius: 10px;
 }
 
 .btn{
-   background-color: red;
-   padding: 10px 0;
-   border: none;
    color: white;
-   font-size: 16px;
-   font-weight: bold;
-   cursor: pointer;
+   font-size: 20px;
+   
 }
