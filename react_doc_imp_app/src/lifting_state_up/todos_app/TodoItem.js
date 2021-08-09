@@ -15,7 +15,7 @@ const TodoItem = (props) => {
     return (
         <div
             className={getClassName(props.todo.selected)}
-            onClick={props.onClick}
+            onClick={()=>props.onClick(props.todo.id)}
         >
             <span>{props.todo.title}</span>
         </div>
