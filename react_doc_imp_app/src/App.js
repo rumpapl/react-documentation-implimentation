@@ -1,5 +1,5 @@
 
-import Calculator from "./lifting_state_up/Calculator";
+import Calculator from "./lifting_state_up/water_boiling_temp_calculator/Calculator";
 
 function App() {
   return (
