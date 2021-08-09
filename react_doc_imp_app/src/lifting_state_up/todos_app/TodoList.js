@@ -9,12 +9,17 @@ const TodoList = () => {
         { id: 2, title: 'Home Work', selected: false },
         { id: 3, title: 'Laundry', selected: false },
         { id: 4, title: 'Study', selected: false },
-        { id: 5, title: 'Shopping', selected: true },
+        { id: 5, title: 'Shopping', selected: false },
     ]);
 
-    // function handleItemSelectClick(id){
-    //     console.log(id);
-    // }
+    function handleItemSelectClick(id) {
+        console.log(id);
+        const newTodos = [...todos];
+        const todo = newTodos.find((todo) => todo.id === id);
+        todo.selected = !todo.selected;
+        setTodos(newTodos);
+
+    }
 
     return (
         <>
@@ -23,7 +28,7 @@ const TodoList = () => {
                     <TodoItem
                         todo={todo}
                         key={todo.id}
-                    // onClick={()=>handleItemSelectClick(todo.id)}
+                        onClick={() => handleItemSelectClick(todo.id)}
                     />
                 )
             }
