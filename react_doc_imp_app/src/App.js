@@ -1,10 +1,10 @@
 
-import ProductsDetails from "./react_composition/ProductsDetails";
+import Calculator from "./lifting_state_up/Calculator";
 
 function App() {
   return (
     <div>
-      <ProductsDetails />
+      <Calculator />
     </div>
   );
 }
