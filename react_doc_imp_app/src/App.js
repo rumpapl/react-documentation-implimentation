@@ -1,9 +1,9 @@
-import Todos from "./lifting_state_up/todos_app/Todos";
+import Example from "./hooks/effect_hook/Example";
 
 function App() {
   return (
     <div>
-      <Todos />
+      <Example />
     </div>
   );
 }
